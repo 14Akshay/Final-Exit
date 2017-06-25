@@ -1,9 +1,9 @@
 class BinaryTree
 {
-  int data;
+  String data;
   BinaryTree left;
   BinaryTree right;
-  public BinaryTree(int data)
+  public BinaryTree(String data)
   {
     this.data = data;
   }
