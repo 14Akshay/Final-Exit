@@ -1,3 +1,4 @@
+package LinkedList;
 
 public class SplitOddEven {
 	public static <T> void main(String args[])

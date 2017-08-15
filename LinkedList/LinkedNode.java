@@ -1,5 +1,6 @@
+package LinkedList;
 
-public class LinkedNode<T extends Comparable<?>> {
+public class LinkedNode<T extends Comparable<?>> implements Comparable<LinkedNode<?>>{
 	
 	LinkedNode<?> next;
 	LinkedNode<?> prev;
@@ -41,6 +42,13 @@ public class LinkedNode<T extends Comparable<?>> {
 	        	result = prime * result + 123;
 	        return result;
 	    }
+
+
+	@Override
+	public int compareTo(LinkedNode<?> arg0) {
+		// TODO Auto-generated method stub
+		return Integer.parseInt(this.data.toString())-Integer.parseInt(arg0.data.toString());
+	}
 
 
 
